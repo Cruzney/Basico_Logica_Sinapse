@@ -1,0 +1,75 @@
+
+
+<script>
+
+// Objeto com dados dos Alunos
+const alunos = [
+    {
+        nome: 'pedro',
+        snome: 'Alcantara',
+        mediaNotas: 7
+    },
+    {
+        nome: 'Bruno',
+        snome: 'Silva',
+        mediaNotas: 8
+    },
+    {
+        nome: 'Amanda',
+        snome: 'Santos',
+        mediaNotas: 8
+    },
+    {
+        nome: 'Aline',
+        snome: 'Ferroso',
+        mediaNotas: 3
+    },
+    {
+        nome: 'Matheus',
+        snome: 'Moraes',
+        mediaNotas: 7
+    },
+    {
+        nome: 'Gustavo',
+        snome: 'Batista',
+        mediaNotas: 10
+    },
+    {
+        nome: 'Iago',
+        snome: 'Cruz',
+        mediaNotas: 9
+    },
+    {
+        nome: 'Lina',
+        snome: 'Cruz',
+        mediaNotas: 10
+    },
+    {
+        nome: 'Edinei',
+        snome: 'Cruz',
+        mediaNotas: 8
+    },
+    {
+        nome: 'Livia',
+        snome: 'Pereira',
+        mediaNotas: 10
+    }
+];
+
+// Function listagem de alunos
+function listagemDeAlunos() {
+    alunos.map((lista) =>{
+
+        return console.log(
+            `${lista.nome} ${lista.snome},
+             Média Notas: ${lista.mediaNotas}, 
+            Situação: ${lista.mediaNotas < 7 ? 'Failed' : 'Approved'}`
+           
+            );
+
+    });
+}
+
+listagemDeAlunos()
+
+</script>

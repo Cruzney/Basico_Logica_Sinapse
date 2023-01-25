@@ -1,0 +1,32 @@
+<canvas width="1000" height="600"></canvas>
+
+<script>
+
+// Criar algoritno que ajuste % de Salario;
+// ate 2000, 10%
+// de 2000 a 5000, 8%
+// Acima de 5000, 6%
+
+console.clear();
+
+function ajustSalario(salario) {
+  let valor;
+// ate 2000, 10%
+  if (salario < 2000) {
+    valor = salario * 1.1;
+  }
+// de 2000 a 5000, 8%
+  if (salario >= 2000 && salario <= 5000) {
+    valor = salario * 1.1;
+  }
+// Acima de 5000, 6%
+  if (salario > 5000) {
+    valor = salario * 1.1;
+  }
+
+  console.log(valor);
+}
+
+ajustSalario(6000);
+
+</script>
